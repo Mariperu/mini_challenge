@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import DataStudents from "../../data/data.json";
 import { Table } from "../../components/Table/Table";

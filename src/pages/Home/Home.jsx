@@ -1,3 +1,4 @@
+import React from "react";
 import { Card } from "../../components/Card/Card";
 
 const Home = () => {
@@ -17,33 +18,31 @@ const Home = () => {
     },
   ];
   return (
-    <>
-      <div
-        className="home"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          margin: "0 auto",
-        }}
-      >
-        <h1 style={{ padding: "1rem" }}>
-          <strong>Welcome students!</strong>
-        </h1>
+    <div
+      className="home"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        margin: "0 auto",
+      }}
+    >
+      <h1 style={{ padding: "1rem" }}>
+        <strong>Welcome students!</strong>
+      </h1>
 
-        {options.map((item, index) => {
-          return (
-            <Card
-              key={index}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-              path={item.path}
-            />
-          );
-        })}
-      </div>
-    </>
+      {options.map((item, index) => {
+        return (
+          <Card
+            key={index}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+            path={item.path}
+          />
+        );
+      })}
+    </div>
   );
 };
 

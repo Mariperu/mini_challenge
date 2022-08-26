@@ -1,3 +1,5 @@
+import React from "react";
+
 const Card = ({ image, title, description, path }) => {
   return (
     <section className="card" style={{ width: "18rem", marginBottom: "1rem" }}>
